@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+     <!-- css style sheet -->
+		<link href="styles/style.css" type="text/css" rel="stylesheet"/>
+		<!-- google fonts: Marrcellus SC -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+  </head>
+  <body>
+	<!-- page title, similar to home page -->
+    <h1 class="pageTitle">2<img width = "60" class="inline-image" src="images/flower1.gif">22 Summer Trip<img width = "100" class="inline-image" src="images/flower2.gif"></h1>
+    
+    <!-- navigation bar -->
+    <nav>
+        <a href="./index.html">01 Home</a>
+        <a href="./page2.html">02 Agenda</a>
+        <a href="./page3.html">03 Favorite Store</a>
+        <a href="./page4.html">04 Feedback</a>
+    </nav>
+
+    <!-- form -->
+    <form action="http://www.example.com/review.php" method="get">
+			<!-- first half of the form -->
+			<fieldset>
+				<legend>Your Details:</legend>
+				<label>Name: <input type="text" name="name" size="30" maxlength="100"></label><br />
+				<label>E mail: <input type="email" name="email" size="30" maxlength="100"></label><br />
+			</fieldset><br />
+			<!-- second half of the form -->
+			<fieldset>
+				<legend>About You:</legend>
+				<p>
+					<label for="hear-about">Where were you during summer?</label>
+					<select name="referrer" id="hear-about">
+						<option value="Asia">Asia</option>
+						<option value="Africa">Africa</option>
+						<option value="North America">North America</option>
+						<option value="South America">South America</option>
+            <option value="Antarctica">Antarctica</option>
+            <option value="Europe">Europe</option>
+            <option value="Australia">Australia</option>
+            <option value="Other">Other</option>
+					</select>
+				</p>
+        <img id = "hand" src="images/hand.png" width = "350">
+				<p>
+					Are you planning to travel for fall break?<br />
+					<label><input type="radio" name="rating" value="yes" /> Yes</label>
+					<label><input type="radio" name="rating" value="no" /> No</label>
+					<label><input type="radio" name="rating" value="maybe" /> Maybe</label>
+				</p>
+				<p>
+					<label for="comments">Where do you want to travel to:</label><br />
+					<textarea rows="4" cols="40" id="comments"></textarea>
+				</p>
+				<label><input type="checkbox" name="subscribe" checked="checked" /> Sign me up for email updates</label><br />
+				<input type="submit" value="Submit review" />
+			</fieldset>
+		</form>
+	<!-- footer for the page -->
+    <footer class="footer">
+      <p>Chloe Wang | chloewang@cmu.edu | 412-123-4567 | 5000 Forbes Ave</p>
+    </footer>
+  </body>
+</html>
